@@ -1,0 +1,183 @@
+/* General Page Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Website Header */
+header {
+    background: linear-gradient(135deg, #243b64, #101a35);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    font-size: 16px;
+    color: #e0e7ff;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #111827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 45px 20px 30px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    font-size: 17px;
+    color: #64748b;
+}
+
+/* Study Cards Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto 50px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* Individual Cards */
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #243b64;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #2878b5;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #174f85;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Tablet Responsive Design */
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        padding: 25px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav {
+        gap: 18px;
+    }
+
+    .welcome h2 {
+        font-size: 23px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+.assignment-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1e40af;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 8px;
+    transition: 0.3s;
+}
+
+.assignment-btn:hover {
+    background-color: #2563eb;
+}

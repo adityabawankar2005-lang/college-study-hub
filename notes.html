@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Subject Notes | College Study Hub</title>
+
+    <style>
+        .cpp-button {
+    display: inline-block;
+    background: #087db5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.cpp-button:hover {
+    background: #075b88;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f9;
+            color: #263859;
+        }
+
+        nav {
+            background-color: #173b78;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000015;
+        }
+
+        button {
+            background: #087db5;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #075b88;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">← Back to Home</a>
+    </nav>
+
+    <header>
+        <h1>📘 Subject Notes</h1>
+        <p>Select your subject to explore notes.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>💻 C++ Programming</h2>
+            <p>Learn C++ basics and programming concepts.</p>
+            <a href="cpp-notes.html" class="cpp-button">
+    View Notes
+</a>
+        </section>
+
+        <section class="card">
+            <h2>📊 Data Structures</h2>
+            <p>Study arrays, searching, sorting and more.</p>
+            
+            <a href="DSA-notes.html" class="cpp-button">
+    View Notes
+</a>          
+        </section>
+
+        <section class="card">
+    <h2>🐍 Python Programming</h2>
+
+    <p>Learn Python basics, programs and outputs.</p>
+
+    <a href="python-notes.html" class="cpp-button">
+        View Notes
+    </a>
+</section>
+    </main>
+
+    <script>
+        function showMessage(subject) {
+            alert("You selected " + subject + " notes. Notes content will be added soon!");
+        }
+    </script>
+
+</body>
+</html>

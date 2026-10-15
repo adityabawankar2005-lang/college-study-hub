@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA Notes | College Study Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #263859;
+        }
+
+        nav {
+            background: #173b78;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        pre {
+            background: #172033;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        button {
+            background: #087db5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .output {
+            background: #e7f7e9;
+            padding: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="notes.html">← Back to Subject Notes</a>
+</nav>
+
+<header>
+    <h1>📘 Data Structures & Algorithms</h1>
+    <p>Learn concepts, programs and outputs</p>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>1. What is Data Structure?</h2>
+        <p>
+            A data structure is a way of organizing and storing data
+            so that it can be accessed and modified efficiently.
+        </p>
+        <p><b>Examples:</b> Array, Linked List, Stack, Queue and Tree.</p>
+    </section>
+
+    <section class="card">
+        <h2>2. Array</h2>
+        <p>An array stores multiple elements of the same data type.</p>
+
+        <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int arr[3] = {10, 20, 30};
+
+    for (int i = 0; i &lt; 3; i++) {
+        cout &lt;&lt; arr[i] &lt;&lt; " ";
+    }
+
+    return 0;
+}</code></pre>
+
+        <a href="dsa-notes.html" class="cpp-button">
+    View Notes
+</a>
+        <div class="output" id="out1" hidden>
+            10 20 30
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>3. Linear Search</h2>
+        <p>
+            Linear search checks each element one by one until
+            the required element is found.
+        </p>
+
+        <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int arr[5] = {10, 20, 30, 40, 50};
+    int key = 30;
+
+    for (int i = 0; i &lt; 5; i++) {
+        if (arr[i] == key) {
+            cout &lt;&lt; "Found at index " &lt;&lt; i;
+            break;
+        }
+    }
+
+    return 0;
+}</code></pre>
+
+        <button onclick="showOutput('out2')">Show Output</button>
+
+        <div class="output" id="out2" hidden>
+            Found at index 2
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>4. Stack</h2>
+        <p>
+            A stack follows LIFO: Last In, First Out.
+            The last element inserted is removed first.
+        </p>
+
+        <p><b>Operations:</b> Push, Pop and Peek.</p>
+    </section>
+
+    <section class="card">
+        <h2>5. Queue</h2>
+        <p>
+            A queue follows FIFO: First In, First Out.
+            The first element inserted is removed first.
+        </p>
+
+        <p><b>Operations:</b> Enqueue and Dequeue.</p>
+    </section>
+
+    <section class="card">
+        <h2>6. Time Complexity</h2>
+        <ul>
+            <li>O(1) — Constant time</li>
+            <li>O(log n) — Logarithmic time</li>
+            <li>O(n) — Linear time</li>
+            <li>O(n²) — Quadratic time</li>
+        </ul>
+    </section>
+
+</main>
+
+<script>
+    function showOutput(id) {
+        const output = document.getElementById(id);
+        output.hidden = !output.hidden;
+    }
+</script>
+
+</body>
+</html>

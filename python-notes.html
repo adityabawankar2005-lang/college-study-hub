@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Notes | College Study Hub</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #263859;
+        }
+
+        nav {
+            background: #173b78;
+            padding: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            text-align: center;
+            padding: 25px;
+            background: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        pre {
+            background: #172033;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        button {
+            background: #087db5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .output {
+            background: #e7f7e9;
+            padding: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="notes.html">← Back to Subject Notes</a>
+</nav>
+
+<header>
+    <h1>🐍 Python Programming Notes</h1>
+    <p>Learn Python basics, programs and outputs</p>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>1. What is Python?</h2>
+        <p>
+            Python is a high-level, general-purpose programming language
+            known for its readable syntax.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>2. First Python Program</h2>
+
+        <pre><code>print("Hello World")</code></pre>
+
+        <button onclick="showOutput('out1')">Show Output</button>
+
+        <div class="output" id="out1" hidden>
+            Hello World
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>3. Variables</h2>
+        <p>Variables store values that a program can use.</p>
+
+        <pre><code>name = "Aditya"
+age = 20
+
+print(name)
+print(age)</code></pre>
+
+        <button onclick="showOutput('out2')">Show Output</button>
+
+        <div class="output" id="out2" hidden>
+            Aditya<br>
+            20
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>4. Addition of Two Numbers</h2>
+
+        <pre><code>a = 10
+b = 20
+
+print("Sum =", a + b)</code></pre>
+
+        <button onclick="showOutput('out3')">Show Output</button>
+
+        <div class="output" id="out3" hidden>
+            Sum = 30
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>5. If-Else Statement</h2>
+
+        <pre><code>number = 8
+
+if number % 2 == 0:
+    print("Even Number")
+else:
+    print("Odd Number")</code></pre>
+
+        <button onclick="showOutput('out4')">Show Output</button>
+
+        <div class="output" id="out4" hidden>
+            Even Number
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>6. Python Loops</h2>
+
+        <p>Loops repeat a block of code.</p>
+
+        <pre><code>for i in range(1, 6):
+    print(i)</code></pre>
+
+        <section class="card">
+    <h2>🐍 Python Programming</h2>
+
+    <p>Learn Python basics, programs and outputs.</p>
+
+    <a href="python-notes.html" class="cpp-button">
+        View Notes
+    </a>
+</section>
+
+        <div class="output" id="out5" hidden>
+            1<br>2<br>3<br>4<br>5
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>7. Important Python Topics</h2>
+
+        <ul>
+            <li>Variables and Data Types</li>
+            <li>Operators</li>
+            <li>If-Else Statements</li>
+            <li>For and While Loops</li>
+            <li>Lists and Tuples</li>
+            <li>Functions</li>
+            <li>Dictionaries and Sets</li>
+            <li>Object-Oriented Programming</li>
+        </ul>
+    </section>
+
+</main>
+
+<script>
+    function showOutput(id) {
+        const output = document.getElementById(id);
+        output.hidden = !output.hidden;
+    }
+</script>
+
+</body>
+</html>

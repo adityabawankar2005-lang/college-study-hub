@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Complete Notes</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #222;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #102b55;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 950px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #173e75;
+        }
+
+        pre {
+            background: #172334;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        .back {
+            display: inline-block;
+            background: #173e75;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📘 C++ Programming Notes</h1>
+    <p>Complete C++ Study Material for Core CSE</p>
+    <p>Basic Concepts, Examples and Practice Programs</p>
+</header>
+
+<main>
+
+<section>
+    <h2>1. Introduction to C++</h2>
+    <p>C++ is a general-purpose programming language.
+    It is used for software development, games, applications
+    and competitive programming.</p>
+
+    <h3>Features of C++</h3>
+    <ul>
+        <li>Fast and efficient.</li>
+        <li>Supports procedural programming.</li>
+        <li>Supports object-oriented programming.</li>
+        <li>Provides functions, arrays and pointers.</li>
+        <li>Useful for learning programming and DSA.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>2. Structure of a C++ Program</h2>
+
+    <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello World!";
+    return 0;
+}</code></pre>
+
+    <ul>
+        <li><b>#include &lt;iostream&gt;:</b> Enables input/output.</li>
+        <li><b>main():</b> Starting point of program execution.</li>
+        <li><b>cout:</b> Displays output.</li>
+        <li><b>return 0:</b> Indicates successful completion.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Variables and Data Types</h2>
+    <p>A variable stores data in a program.</p>
+
+    <pre><code>int age = 18;
+float marks = 85.5;
+double price = 99.99;
+char grade = 'A';
+string name = "Student";
+bool passed = true;</code></pre>
+
+    <ul>
+        <li><b>int:</b> Whole numbers.</li>
+        <li><b>float:</b> Decimal numbers.</li>
+        <li><b>double:</b> Decimal numbers with more precision.</li>
+        <li><b>char:</b> A single character.</li>
+        <li><b>string:</b> Text.</li>
+        <li><b>bool:</b> True or false.</li>
+    </ul>
+    <p>For string programs, include <code>#include &lt;string&gt;</code>.</p>
+</section>
+
+<section>
+    <h2>4. Input and Output</h2>
+
+    <pre><code>#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int a, b;
+
+    cout &lt;&lt; "Enter two numbers: ";
+    cin &gt;&gt; a &gt;&gt; b;
+
+    cout &lt;&lt; "Sum = " &lt;&lt; a + b;
+    return 0;
+}</code></pre>
+
+    <p><b>cin</b> takes input from the keyboard.
+    <b>cout</b> displays output on the screen.</p>
+</section>
+
+<section>
+    <h2>5. Operators in C++</h2>
+    <ul>
+        <li><b>Arithmetic:</b> +, -, *, /, %</li>
+        <li><b>Relational:</b> ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+        <li><b>Logical:</b> &amp;&amp;, ||, !</li>
+        <li><b>Assignment:</b> =, +=, -=, *=</li>
+        <li><b>Increment:</b> ++</li>
+        <li><b>Decrement:</b> --</li>
+    </ul>
+
+    <pre><code>int a = 10, b = 3;
+
+cout &lt;&lt; a + b;
+cout &lt;&lt; a - b;
+cout &lt;&lt; a * b;
+cout &lt;&lt; a / b;
+cout &lt;&lt; a % b;</code></pre>
+</section>
+
+<section>
+    <h2>6. Conditional Statements</h2>
+
+    <h3>if-else</h3>
+    <pre><code>int age = 18;
+
+if (age &gt;= 18) {
+    cout &lt;&lt; "Eligible";
+} else {
+    cout &lt;&lt; "Not Eligible";
+}</code></pre>
+
+    <h3>else-if</h3>
+    <pre><code>int marks = 75;
+
+if (marks &gt;= 90) {
+    cout &lt;&lt; "Grade A";
+} else if (marks &gt;= 70) {
+    cout &lt;&lt; "Grade B";
+} else if (marks &gt;= 40) {
+    cout &lt;&lt; "Grade C";
+} else {
+    cout &lt;&lt; "Fail";
+}</code></pre>
+
+    <p>Conditional statements execute code according to
+    whether a condition is true or false.</p>
+</section>
+
+<section>
+    <h2>7. Loops in C++</h2>
+
+    <h3>For Loop</h3>
+    <pre><code>for (int i = 1; i &lt;= 5; i++) {
+    cout &lt;&lt; i &lt;&lt; " ";
+}</code></pre>
+
+    <h3>While Loop</h3>
+    <pre><code>int i = 1;
+
+while (i &lt;= 5) {
+    cout &lt;&lt; i &lt;&lt; " ";
+    i++;
+}</code></pre>
+
+    <h3>Do-While Loop</h3>
+    <pre><code>int i = 1;
+
+do {
+    cout &lt;&lt; i &lt;&lt; " ";
+    i++;
+} while (i &lt;= 5);</code></pre>
+
+    <p>Loops repeat statements while their conditions allow.
+    A do-while loop executes at least once.</p>
+</section>
+
+<section>
+    <h2>8. Arrays</h2>
+    <p>An array stores multiple values of the same data type.
+    Array indexing begins at zero.</p>
+
+    <pre><code>int numbers[5] = {10, 20, 30, 40, 50};
+
+cout &lt;&lt; numbers[0];
+
+for (int i = 0; i &lt; 5; i++) {
+    cout &lt;&lt; numbers[i] &lt;&lt; " ";
+}</code></pre>
+</section>
+
+<section>
+    <h2>9. Functions</h2>
+    <p>A function is a reusable block of code that performs
+    a particular task.</p>
+
+    <pre><code>int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    cout &lt;&lt; add(5, 3);
+    return 0;
+}</code></pre>
+
+    <p>Functions make programs easier to organize,
+    reuse and maintain.</p>
+</section>
+
+<section>
+    <h2>10. Strings</h2>
+    <p>A string stores a sequence of characters.</p>
+
+    <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    string name = "C++ Programming";
+
+    cout &lt;&lt; name;
+    cout &lt;&lt; name.length();
+
+    return 0;
+}</code></pre>
+</section>
+
+<section>
+    <h2>11. Pointers</h2>
+    <p>A pointer stores the memory address of an object.</p>
+
+    <pre><code>int number = 10;
+int* ptr = &amp;number;
+
+cout &lt;&lt; number;
+cout &lt;&lt; *ptr;</code></pre>
+
+    <p>The <code>&amp;</code> operator obtains an address.
+    The <code>*</code> operator can access the value
+    at the address stored in a pointer.</p>
+</section>
+
+<section>
+    <h2>12. Object-Oriented Programming (OOP)</h2>
+
+    <ul>
+        <li><b>Class:</b> Blueprint for creating objects.</li>
+        <li><b>Object:</b> Instance of a class.</li>
+        <li><b>Encapsulation:</b> Organizes data and methods together.</li>
+        <li><b>Inheritance:</b> Creates a class based on another class.</li>
+        <li><b>Polymorphism:</b> Allows different behaviours through a common interface.</li>
+        <li><b>Abstraction:</b> Hides implementation details.</li>
+    </ul>
+
+    <h3>Class and Object Example</h3>
+    <pre><code>#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+class Student {
+public:
+    string name;
+    int rollNo;
+
+    void display() {
+        cout &lt;&lt; name &lt;&lt; " " &lt;&lt; rollNo;
+    }
+};
+
+int main() {
+    Student s1;
+
+    s1.name = "Aman";
+    s1.rollNo = 1;
+    s1.display();
+
+    return 0;
+}</code></pre>
+</section>
+
+<section>
+    <h2>13. Constructors</h2>
+    <p>A constructor initializes an object when it is created.
+    It has the same name as the class and no return type.</p>
+
+    <pre><code>class Student {
+public:
+    int rollNo;
+
+    Student() {
+        rollNo = 1;
+    }
+};</code></pre>
+</section>
+
+<section>
+    <h2>14. Common Errors in C++</h2>
+    <ul>
+        <li>Forgetting semicolons.</li>
+        <li>Using variables before declaring them.</li>
+        <li>Misspelling variable names.</li>
+        <li>Using = instead of == in a comparison.</li>
+        <li>Missing curly braces or parentheses.</li>
+        <li>Accessing an array outside its valid range.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>15. C++ Practice Programs</h2>
+    <ol>
+        <li>Print Hello World.</li>
+        <li>Add two numbers.</li>
+        <li>Check whether a number is even or odd.</li>
+        <li>Find the largest of three numbers.</li>
+        <li>Print numbers from 1 to 100.</li>
+        <li>Calculate the factorial of a number.</li>
+        <li>Find the sum of array elements.</li>
+        <li>Reverse a string.</li>
+        <li>Create a Student class.</li>
+        <li>Calculate the area of a rectangle.</li>
+    </ol>
+</section>
+
+<section>
+    <h2>16. How to Learn C++</h2>
+    <ol>
+        <li>Understand basic syntax and data types.</li>
+        <li>Practise input, output and operators.</li>
+        <li>Learn conditions and loops.</li>
+        <li>Practise arrays and functions.</li>
+        <li>Study pointers and references.</li>
+        <li>Learn classes, objects and OOP.</li>
+        <li>Write small programs regularly.</li>
+    </ol>
+</section>
+
+<a class="back" href="materials.html">
+    ← Back to Study Materials
+</a>
+
+</main>
+
+<footer>
+    <p>Study Materials | C++ Programming Notes</p>
+</footer>
+
+</body>
+</html>
